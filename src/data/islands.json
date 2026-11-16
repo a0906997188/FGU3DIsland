@@ -1,0 +1,326 @@
+{
+  "college": {
+    "name": "佛光大學應用科技與設計學院",
+    "url": "https://tech.fgu.edu.tw/?locale=zh_tw",
+    "deptListUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink",
+    "handbookUrl": "https://academic.fgu.edu.tw/zh_tw/RCD/StudentprogramHandbook",
+    "verifiedAt": "2026-11-16"
+  },
+  "hub": {
+    "id": "hub",
+    "name": "學院星港",
+    "subtitle": "群島中央・消息看板",
+    "position": [0, 0],
+    "color": "#cfe0ff",
+    "intro": "這裡是群島的中央港口。五條星光橋通往學院的五個學組，看板上有學院官網的最新消息。"
+  },
+  "islands": [
+    {
+      "id": "info",
+      "name": "資訊應用學系",
+      "subtitle": "資訊應用學組",
+      "position": [22, -4],
+      "palette": { "grass": "#bcd4ff", "path": "#fff3c4", "accent": "#ffb4b4", "glow": "#8fb8ff" },
+      "sourceUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept4",
+      "siteUrl": "https://www.ai.fgu.edu.tw/",
+      "courseUrl": "https://tech.fgu.edu.tw/zh_tw/course01/course1_3",
+      "verifiedAt": "2026-11-16",
+      "summary": "結合智慧應用開發、動畫遊戲設計、電子商務與數位內容，也發展學習內容設計與生成式 AI 教育應用。",
+      "newsKeywords": ["資訊應用", "AI", "人工智慧"],
+      "landmark": {
+        "type": "holoTower",
+        "name": "星碼全息塔",
+        "description": "一座投影著程式碼方塊與遊戲畫面的高塔，象徵智慧應用開發與動畫遊戲設計。"
+      },
+      "chief": {
+        "name": "星碼島長",
+        "demo": true,
+        "greeting": "歡迎來到資訊應用島！我是星碼島長，想從哪裡開始？",
+        "answers": [
+          {
+            "q": "這裡學什麼？",
+            "a": "官網介紹的重點包括：智慧應用開發、動畫遊戲設計、電子商務、數位內容、文創觀光科技，以及學習內容設計與數位教材開發。",
+            "links": [{ "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept4" }]
+          },
+          {
+            "q": "有哪些課程或活動？",
+            "a": "系網文章提到「C#程式設計」課程導入 Unity 與 AI 協作做遊戲實作，也有「三好AI創新應用競賽」。學院頁面列出的教室包括多媒體互動感應教學實驗教室 U424、iOS 教學教室 U412、創意影音實驗室等。完整課程請看學程手冊。",
+            "links": [
+              { "label": "資訊應用學系網站", "url": "https://www.ai.fgu.edu.tw/" },
+              { "label": "學程手冊（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/course01/course1_3" }
+            ]
+          },
+          {
+            "q": "從哪裡開始探索？",
+            "a": "先到系網看最新的課程與競賽文章，再翻學程手冊比對想修的方向。想做遊戲或互動作品的話，可以順著星光橋去文化資產島，看看兩組怎麼合作。",
+            "links": [{ "label": "資訊應用學系網站", "url": "https://www.ai.fgu.edu.tw/" }]
+          }
+        ]
+      },
+      "resident": {
+        "name": "碼克",
+        "species": "貓頭鷹 × 章魚",
+        "model": "owlOctopus",
+        "demo": true,
+        "line": "我有八隻觸手，可以同時寫程式、畫動畫、測遊戲！不過把古蹟變成互動展覽這件事，我還需要文化資產島的朋友幫忙。"
+      },
+      "quest": {
+        "id": "q-info",
+        "title": "數位策展任務（跨島）",
+        "demo": true,
+        "requiresClue": "clue-scan",
+        "lockedHint": "這題需要文化資產島的線索：沿著星光橋去找島民「藏藏」聊聊。",
+        "question": "想把一座古蹟做成手機上可以互動的數位展覽，需要哪兩組的能力搭配？",
+        "options": [
+          "文化資產組的 3D 掃描與數位典藏 ＋ 資訊應用組的互動與遊戲設計",
+          "傳播組的廣播錄音 ＋ 產品設計組的油土模型",
+          "建築學程的建築法規 ＋ 傳播組的公關行銷"
+        ],
+        "answer": 0,
+        "explain": "文化資產組先用 3D 掃描、數位典藏把古蹟精確記錄下來（有資料）；資訊應用組再用互動與遊戲設計把資料變成可以操作、可以玩的體驗（有體驗）。兩組搭配，就是一個完整的數位策展專案。",
+        "sources": [
+          { "label": "文化資產與創意學組介紹", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept1" },
+          { "label": "資訊應用學組介紹", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept4" }
+        ]
+      }
+    },
+    {
+      "id": "heritage",
+      "name": "文化資產與創意學系",
+      "subtitle": "文化資產與創意學組",
+      "position": [14, 17],
+      "palette": { "grass": "#ffe7a8", "path": "#fff8e6", "accent": "#ff9f9f", "glow": "#ffd36b" },
+      "sourceUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept1",
+      "siteUrl": "https://car.fgu.edu.tw/",
+      "courseUrl": "https://tech.fgu.edu.tw/zh_tw/course01/course1_0",
+      "verifiedAt": "2026-11-16",
+      "summary": "以文化保存、創新設計、科技應用為核心：調查、保存、修復與再利用文化資產，也把文化元素轉成文創商品、沉浸式展覽與數位體驗。",
+      "newsKeywords": ["文化資產", "文創", "USR"],
+      "landmark": {
+        "type": "scanPavilion",
+        "name": "掃描光環古亭",
+        "description": "一座傳統屋頂的古亭，外圍有一圈旋轉的 3D 掃描光環，象徵文化資產保存與數位典藏。"
+      },
+      "chief": {
+        "name": "典藏島長",
+        "demo": true,
+        "greeting": "旅人好！我是典藏島長，這座島守護著老故事，也讓它們用新科技重新說話。",
+        "answers": [
+          {
+            "q": "這裡學什麼？",
+            "a": "官網介紹提到：文化資產調查、保存修復與再利用，並把文化元素轉成文創商品、沉浸式展覽與數位體驗，同時導入 3D 掃描、數位典藏、GIS 地景分析與 AI。",
+            "links": [{ "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept1" }]
+          },
+          {
+            "q": "有哪些課程或活動？",
+            "a": "學組介紹頁沒有列出具體課程名稱，課程請以學程手冊為準。活動消息可以看系網，或在群島的「消息」裡搜尋「文化」。",
+            "links": [
+              { "label": "學程手冊（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/course01/course1_0" },
+              { "label": "文化資產與創意學系網站", "url": "https://car.fgu.edu.tw/" }
+            ]
+          },
+          {
+            "q": "從哪裡開始探索？",
+            "a": "先讀學組介紹，了解「保存」和「創意」兩條路線；再去找島民藏藏，他手上有一條資訊應用島需要的線索。",
+            "links": [{ "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept1" }]
+          }
+        ]
+      },
+      "resident": {
+        "name": "藏藏",
+        "species": "烏龜 × 狐狸",
+        "model": "turtleFox",
+        "demo": true,
+        "line": "我的殼上刻滿了古蹟的紋路，是用 3D 掃描一點一點記錄下來的。這條線索給你，資訊應用島的碼克正在等它！",
+        "givesClue": { "id": "clue-scan", "label": "線索：3D 掃描與數位典藏" }
+      },
+      "quest": {
+        "id": "q-heritage",
+        "title": "文資工具箱",
+        "demo": true,
+        "question": "依學組介紹，文化資產與創意學組會用哪些科技來記錄與分析文化資產？",
+        "options": ["3D 掃描、數位典藏與 GIS 地景分析", "CNC 加工與油土雕塑", "4K 攝影棚與副控室"],
+        "answer": 0,
+        "explain": "學組介紹提到導入 3D 掃描、數位典藏、GIS 地景分析與 AI。CNC 與油土屬於產品與媒體設計學組的工作室，4K 攝影棚在傳播學組。",
+        "sources": [{ "label": "文化資產與創意學組介紹", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept1" }]
+      }
+    },
+    {
+      "id": "design",
+      "name": "產品與媒體設計學系",
+      "subtitle": "產品與媒體設計學組",
+      "position": [-10, 19],
+      "palette": { "grass": "#ffd0d0", "path": "#fff3c4", "accent": "#9fc2ff", "glow": "#ff9fb0" },
+      "sourceUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept2",
+      "siteUrl": "https://pmd.fgu.edu.tw/",
+      "courseUrl": "https://tech.fgu.edu.tw/zh_tw/course01/course1_1",
+      "verifiedAt": "2026-11-16",
+      "summary": "以產品設計與媒體設計為核心，結合設計、媒體科技與文化創意，從模型、CNC 到影像與互動都動手做。",
+      "newsKeywords": ["產品與媒體設計", "設計"],
+      "landmark": {
+        "type": "printerForge",
+        "name": "星星列印工坊",
+        "description": "一台巨大的 3D 列印機正在印出星星造型的產品，旁邊架著相機，象徵產品設計與媒體設計。"
+      },
+      "chief": {
+        "name": "造物島長",
+        "demo": true,
+        "greeting": "嗨！我是造物島長。在這裡，想法會變成摸得到、拍得出來的作品。",
+        "answers": [
+          {
+            "q": "這裡學什麼？",
+            "a": "官網介紹以產品設計與媒體設計為核心，結合設計、媒體科技與文化創意。",
+            "links": [{ "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept2" }]
+          },
+          {
+            "q": "有哪些課程或活動？",
+            "a": "學院頁面列出許多工作室：創新產品設計、關懷設計、文創商品設計、互動設計、視覺傳達設計、攝影及數位影像、音效、模型設計、CNC 設計、油土工作室，以及電腦輔助設計實習室、專題製作室，也提到 3D 列印設備。具體課程請看學程手冊。",
+            "links": [
+              { "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept2" },
+              { "label": "學程手冊（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/course01/course1_1" }
+            ]
+          },
+          {
+            "q": "從哪裡開始探索？",
+            "a": "先挑一間最有興趣的工作室，再到系網看學生作品與活動消息。",
+            "links": [{ "label": "產品與媒體設計學系網站", "url": "https://pmd.fgu.edu.tw/" }]
+          }
+        ]
+      },
+      "resident": {
+        "name": "波波",
+        "species": "河狸 × 蝴蝶",
+        "model": "beaverButterfly",
+        "demo": true,
+        "line": "河狸會蓋東西，蝴蝶會變漂亮，我兩個都會！你看那台列印機，印的星星是我設計的。"
+      },
+      "quest": {
+        "id": "q-design",
+        "title": "工作室尋寶",
+        "demo": true,
+        "question": "下面哪一個是學院頁面列出的「產品與媒體設計學組」空間？",
+        "options": ["CNC 設計工作室", "多媒體互動感應教學實驗教室 U424", "4K 數位影視攝影棚"],
+        "answer": 0,
+        "explain": "CNC 設計工作室屬於產品與媒體設計學組；U424 在資訊應用學組，4K 攝影棚在傳播學組。",
+        "sources": [{ "label": "產品與媒體設計學組介紹", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept2" }]
+      }
+    },
+    {
+      "id": "comm",
+      "name": "傳播學系",
+      "subtitle": "傳播學組",
+      "position": [-21, -2],
+      "palette": { "grass": "#c9e4ff", "path": "#fff8e6", "accent": "#ffd36b", "glow": "#7fd0ff" },
+      "sourceUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept3",
+      "siteUrl": "http://communication.fgu.edu.tw/main.php",
+      "courseUrl": "https://tech.fgu.edu.tw/zh_tw/course01/course1_2",
+      "verifiedAt": "2026-11-16",
+      "summary": "兼顧理論與實務，涵蓋廣播電視、廣告、公關、行銷、AI 與大數據、社群媒體、數位內容與流行音樂文化。",
+      "newsKeywords": ["傳播", "TVBS", "媒體"],
+      "landmark": {
+        "type": "dishStudio",
+        "name": "衛星天線攝影棚",
+        "description": "一座頂著衛星天線、亮著「ON AIR」燈號的攝影棚，象徵廣播電視與數位內容製作。"
+      },
+      "chief": {
+        "name": "訊號島長",
+        "demo": true,
+        "greeting": "收到收到！我是訊號島長，這裡每天都在把故事傳到宇宙的每個角落。",
+        "answers": [
+          {
+            "q": "這裡學什麼？",
+            "a": "官網介紹的範圍包括廣播電視、廣告、公關、行銷、AI 與大數據、社群媒體、數位內容，以及流行音樂與文化，兼顧理論與實務。",
+            "links": [{ "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept3" }]
+          },
+          {
+            "q": "有哪些課程或活動？",
+            "a": "專業教室有「4K 數位影視攝影棚（含副控室）」在懷恩館 008，「廣播錄音室、音樂創作室」在雲起樓 321。學院也有產學合作與社會參與，例如邀請業界專家指導簡報課程。具體課程請看學程手冊。",
+            "links": [
+              { "label": "學組介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept3" },
+              { "label": "學程手冊（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/course01/course1_2" }
+            ]
+          },
+          {
+            "q": "從哪裡開始探索？",
+            "a": "先去系網看看學生作品，再到群島消息搜尋「TVBS」或「簡報」，了解業界合作的課程。",
+            "links": [{ "label": "傳播學系網站", "url": "http://communication.fgu.edu.tw/main.php" }]
+          }
+        ]
+      },
+      "resident": {
+        "name": "嗶嗶",
+        "species": "海豚 × 鸚鵡",
+        "model": "dolphinParrot",
+        "demo": true,
+        "line": "嗶——我會用海豚的聲納收訊號，再用鸚鵡的嗓子播出去！今天的頻道是：學院新鮮事。"
+      },
+      "quest": {
+        "id": "q-comm",
+        "title": "找到攝影棚",
+        "demo": true,
+        "question": "傳播學組的「4K 數位影視攝影棚（含副控室）」在哪裡？",
+        "options": ["懷恩館 008 室", "雲起樓 321 室", "U412 教室"],
+        "answer": 0,
+        "explain": "4K 攝影棚在懷恩館 008 室；雲起樓 321 是廣播錄音室與音樂創作室；U412 是資訊應用學組的 iOS 教學教室。",
+        "sources": [{ "label": "傳播學組介紹", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/dept3" }]
+      }
+    },
+    {
+      "id": "arch",
+      "name": "建築環境設計學士學位學程",
+      "subtitle": "建築環境設計核心學程・地域環境構築與活化學程",
+      "position": [-6, -22],
+      "palette": { "grass": "#ffe0c2", "path": "#ffffff", "accent": "#a9c8ff", "glow": "#ffc48f" },
+      "sourceUrl": "https://tech.fgu.edu.tw/zh_tw/deptlink/%E5%BB%BA%E7%AF%89%E7%92%B0%E5%A2%83%E8%A8%AD%E8%A8%88%E7%B3%BB",
+      "siteUrl": "https://arch.fgu.edu.tw/?locale=zh_tw",
+      "courseUrl": "https://arch.fgu.edu.tw/?locale=zh_tw",
+      "verifiedAt": "2026-11-16",
+      "summary": "培養永續建築環境、地方空間活化與老屋保存再生的跨域能力，設計與構築實作並重。",
+      "newsKeywords": ["建築", "建環"],
+      "landmark": {
+        "type": "domeHouse",
+        "name": "星際穹頂老屋",
+        "description": "一棟被網格穹頂守護的老屋，象徵老屋保存再生與永續建築環境。"
+      },
+      "chief": {
+        "name": "穹頂島長",
+        "demo": true,
+        "greeting": "歡迎！我是穹頂島長。這裡的人相信，好的建築能讓一個地方重新活起來。",
+        "answers": [
+          {
+            "q": "這裡學什麼？",
+            "a": "官網介紹：培養永續建築環境、地方空間活化與老屋保存再生的跨域能力，課程兼重設計與構築實作。學程分為「建築環境設計核心學程」與「地域環境構築與活化學程」。",
+            "links": [{ "label": "學程介紹（學院官網）", "url": "https://tech.fgu.edu.tw/zh_tw/deptlink/%E5%BB%BA%E7%AF%89%E7%92%B0%E5%A2%83%E8%A8%AD%E8%A8%88%E7%B3%BB" }]
+          },
+          {
+            "q": "有哪些課程或活動？",
+            "a": "學程網站的消息提到「建築構造」課程深化實務能力、整合手繪與 BIM 的設計教學，以及「工地人生」講座、與營造業者合作的職涯分享會。",
+            "links": [{ "label": "建築環境設計學程網站", "url": "https://arch.fgu.edu.tw/?locale=zh_tw" }]
+          },
+          {
+            "q": "從哪裡開始探索？",
+            "a": "先看學程網站的課程架構，再留意講座與職涯分享會。官網也列出建築師專技高考、公務人員高考建築工程類科等出路，可以先了解。",
+            "links": [{ "label": "建築環境設計學程網站", "url": "https://arch.fgu.edu.tw/?locale=zh_tw" }]
+          }
+        ]
+      },
+      "resident": {
+        "name": "甲甲",
+        "species": "穿山甲 × 白鷺",
+        "model": "pangolinEgret",
+        "demo": true,
+        "line": "我的鱗片像屋瓦，一片片疊好才不漏雨；我的長腿讓我站在工地也不怕泥巴！"
+      },
+      "quest": {
+        "id": "q-arch",
+        "title": "老屋再生",
+        "demo": true,
+        "question": "學程網站消息提到，設計教學整合了哪兩種表現方式？",
+        "options": ["手繪與 BIM", "油土與 CNC", "廣播與社群"],
+        "answer": 0,
+        "explain": "學程消息提到整合手繪與 BIM（建築資訊模型），讓設計不只停在紙上，也能連到構築實務。",
+        "sources": [{ "label": "建築環境設計學程網站", "url": "https://arch.fgu.edu.tw/?locale=zh_tw" }]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+# 每天抓一次學院官網最新消息。
+# 成功：更新 src/data/news.json 並提交 → Vercel 偵測到 push 後自動重新部署。
+# 失敗：保留舊資料，只記錄 lastAttempt（失敗時間），網站會顯示「最近一次成功更新」的時間與警告。
+name: 更新學院消息
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # 每天台灣時間 06:00（UTC 22:00）
+  workflow_dispatch: {} # 展示時可在 Actions 頁面手動執行
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 測試解析程式
+        run: npm test
+
+      - name: 抓取官網消息
+        id: fetch
+        continue-on-error: true
+        run: node scripts/fetch-news.mjs
+
+      - name: 有變更才提交
+        run: |
+          if git diff --quiet -- src/data/news.json; then
+            echo "消息沒有變化，不需提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/news.json
+          if [ "${{ steps.fetch.outcome }}" = "success" ]; then
+            git commit -m "chore(news): 更新學院消息"
+          else
+            git commit -m "chore(news): 抓取失敗，保留舊資料並記錄時間"
+          fi
+          git push
+
+      - name: 抓取失敗時讓這次執行顯示為失敗
+        if: steps.fetch.outcome == 'failure'
+        run: |
+          echo "::warning::官網抓取失敗，網站繼續顯示最近一次成功的資料"
+          exit 1
