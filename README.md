@@ -3,6 +3,8 @@
 用 Three.js 做的 3D 群島，帶大學生探索佛光大學應用科技與設計學院的五個學組。
 這是課堂專題作品，不是官方網站；正式資訊以[學院官網](https://tech.fgu.edu.tw/?locale=zh_tw)為準。
 
+🌐 線上版：https://fgu-3-d-island.vercel.app
+
 ## 本機執行
 
 ```bash
@@ -27,8 +29,8 @@ npm run build      # 產生正式版到 dist/
 
 1. 在 GitHub 建立新的 repo，把這個專案推上去。
 2. 到 Vercel 選「Add New → Project」，匯入這個 repo；框架會自動偵測為 Vite，不需要改設定。
-3. GitHub repo 的 **Settings → Actions → General → Workflow permissions** 選 **Read and write permissions**，
-   讓每天的消息更新可以提交。
+3. 不需要改 GitHub 設定：`.github/workflows/update-news.yml` 已宣告 `permissions: contents: write`，
+   每天的消息更新可以直接提交。
 4. 之後每天台灣時間 06:00 會自動抓取消息；有更新就提交，Vercel 會自動重新部署。
 
 ## 展示：證明自動更新與失敗備援真的能用
